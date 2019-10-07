@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- 视图 与设备同宽   1倍大小 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <style type="text/css">
+    body{
+      /* margin: 0; */
+      background-color: #434343;
+    }
+    /* 后代选择器 */
+    .wrap{
+      overflow: hidden;
+      width: 930px;
+      /* height: 200px; */
+      margin: 50px auto;
+      background-color: #c7c7c7;
+    }
+    .wrap img{
+      float: left;
+      display: block;
+      width: 280px;
+      height: 180px;
+      margin: 10px;
+      border: 5px solid #434343;
+      border-radius: 10px;
+      /* vertical-align: top; */
+
+      /* inline  行内样式 */
+      /* block 块级元素 独占一行 */
+      /* 父级高度塌陷问题 BFC 块级格式化上下文*/
+    }
+  </style>
+</head>
+<body>
+  <!-- img[src="images/$.jpg" width="1920" height="11280" alt="Adam"]*10 -->
+  <div class="wrap">
+    <!-- <img src="./images/1.jpg" alt="林允儿" width="1920" height="1280"/> -->
+    <img src="images/1.jpg" alt="index" width="1920" height="1280">
+    <img src="images/2.jpg" alt="index" width="1920" height="1280">
+    <img src="images/3.jpg" alt="index" width="1920" height="1280">
+    <img src="images/4.jpg" alt="index" width="1920" height="1280">
+    <img src="images/5.jpg" alt="index" width="1920" height="1280">
+    <img src="images/6.jpg" alt="index" width="1920" height="1280">
+    <img src="images/7.jpg" alt="index" width="1920" height="1280">
+    <img src="images/8.jpg" alt="index" width="1920" height="1280">
+    <img src="images/9.jpg" alt="index" width="1920" height="1280">
+    <img src="images/10.jpg" alt="index" width="1920" height="1280">
+    <img src="images/11.jpg" alt="index" width="1920" height="1280">
+    <img src="images/12.jpg" alt="index" width="1920" height="1280">
+    <img src="images/13.jpg" alt="index" width="1920" height="1280">
+    <img src="images/14.jpg" alt="index" width="1920" height="1280">
+    <img src="images/15.jpg" alt="index" width="1920" height="1280">
+    <img src="images/16.jpg" alt="index" width="1920" height="1280">
+    <img src="images/17.jpg" alt="index" width="1920" height="1280">
+    <img src="images/18.jpg" alt="index" width="1920" height="1280">
+    <img src="images/19.jpg" alt="index" width="1920" height="1280">
+    <img src="images/20.jpg" alt="index" width="1920" height="1280">
+    <img src="images/21.jpg" alt="index" width="1920" height="1280">
+    <img src="images/22.jpg" alt="index" width="1920" height="1280">
+    <img src="images/23.jpg" alt="index" width="1920" height="1280">
+    <img src="images/24.jpg" alt="index" width="1920" height="1280">
+    <img src="images/25.jpg" alt="index" width="1920" height="1280">
+    <img src="images/26.jpg" alt="index" width="1920" height="1280">
+    <img src="images/27.jpg" alt="index" width="1920" height="1280">
+    <img src="images/28.jpg" alt="index" width="1920" height="1280">
+    <img src="images/29.jpg" alt="index" width="1920" height="1280">
+    <img src="images/30.jpg" alt="index" width="1920" height="1280">
+    <img src="images/31.jpg" alt="index" width="1920" height="1280">
+    <img src="images/32.jpg" alt="index" width="1920" height="1280">
+    <img src="images/33.jpg" alt="index" width="1920" height="1280">
+    <img src="images/34.jpg" alt="index" width="1920" height="1280">
+    <img src="images/35.jpg" alt="index" width="1920" height="1280">
+    <img src="images/36.jpg" alt="index" width="1920" height="1280">
+    <img src="images/37.jpg" alt="index" width="1920" height="1280">
+    <img src="images/38.jpg" alt="index" width="1920" height="1280">
+    <img src="images/39.jpg" alt="index" width="1920" height="1280">
+    <img src="images/40.jpg" alt="index" width="1920" height="1280">
+  </div>
+  <script src="js/jquery-1.11.1.min.js" charset="utf-8"></script>
+  <script src="js/lazyload.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    $("img").lazyload({
+      placeholder : "images/loading.gif",
+      effect: "fadeIn",
+      threshold: -200,
+    })
+  </script>
+</body>
+</html>
